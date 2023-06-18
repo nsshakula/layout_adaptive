@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  min-width: 250px;
+}
+.container .header {
+  min-height: 100px;
+  background-color: #a9a9a9;
+}
+.container .header .header_title {
+  padding: 20px 0 10px;
+  text-align: center;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .container .header_title {
+    font-size: 1.5em;
+  }
+}
+.container .main {
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.container .main .main_title {
+  padding: 20px 0 10px;
+  text-align: center;
+  margin: 0;
+}
+.container .main .main_wrapper {
+  background-color: rgb(255, 228, 181);
+  text-align: center;
+}
+.container .main .main_wrapper .main_basic {
+  display: flex;
+  justify-content: space-around;
+}
+.container .main .main_wrapper .main_basic .main_item {
+  background-color: rgb(255, 209, 185);
+  width: 40%;
+}
+.container .main_text {
+  font-size: 1.5em;
+  font-family: cursive;
+}
+.container .main_item-bottom {
+  display: inline-block;
+  background-color: rgb(255, 209, 185);
+  width: 90%;
+  margin-top: 20px;
+}
+.container .main_side {
+  background-color: rgb(144, 238, 144);
+}
+@media screen and (max-width: 768px) {
+  .container .main {
+    grid-template-columns: auto;
+  }
+  .container .main_wrapper {
+    min-height: 15vh;
+  }
+  .container .main_side {
+    min-height: 15vh;
+  }
+  .container .main_text {
+    font-size: 1em;
+  }
+}
+.container .footer {
+  min-height: 100px;
+}
+.container .footer .footer_wrapper {
+  display: flex;
+  justify-content: space-around;
+  background-color: #a9a9a9;
+}
+.container .footer .footer_wrapper .footer_item {
+  background-color: #dcdcdc;
+  margin: 10px;
+}
+.container .footer .footer_wrapper .footer_item .footer_text {
+  font-size: 1.5em;
+}
+@media screen and (max-width: 768px) {
+  .container .footer_text {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 412px) {
+  .container .footer_wrapper {
+    flex-wrap: wrap;
+  }
+  .container .footer_wrapper .footer_item {
+    width: 70%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
